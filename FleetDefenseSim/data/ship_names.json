@@ -1,0 +1,59 @@
+[
+    {
+        "class": "Nimitz",
+        "ships": [
+            "USS Nimitz",
+            "USS Dwight D. Eisenhower",
+            "USS Carl Vinson",
+            "USS Theodore Roosevelt",
+            "USS Abraham Lincoln"
+        ]
+    },
+    {
+        "class": "Ticonderoga",
+        "ships": [
+            "USS Ticonderoga",
+            "USS Yorktown",
+            "USS Vincennes",
+            "USS Valley Forge",
+            "USS Thomas S. Gates"
+        ]
+    },
+    {
+        "class": "Spruance",
+        "ships": [
+            "USS Spruance",
+            "USS Paul F. Foster",
+            "USS Kinkaid",
+            "USS Hewitt",
+            "USS Elliot",
+            "USS Arthur W. Radford",
+            "USS Peterson",
+            "USS Caron",
+            "USS David R. Ray",
+            "USS Oldendorf",
+            "USS John Young",
+            "USS Comte de Grasse"
+        ]
+    },
+    {
+        "class": "OliverHazardPerry",
+        "ships": [
+            "USS Oliver Hazard Perry",
+            "USS McInerney",
+            "USS Wadsworth",
+            "USS Duncan",
+            "USS Clark",
+            "USS George Philip",
+            "USS Samuel Eliot Morison",
+            "USS Sides",
+            "USS Estocin",
+            "USS Clifton Sprague",
+            "USS John A. Moore",
+            "USS Antrim",
+            "USS Flatley",
+            "USS Fahrion",
+            "USS Lewis B. Puller"
+        ]
+    }
+]
