@@ -6,10 +6,10 @@ setup(
     description="A short description of your package",
     author="Your Name",
     author_email="your.email@example.com",
-    url="https://github.com/yourusername/your-repo",
-    packages=find_packages(where="src"),
-    package_dir={"": "FleetDefenseSim"},  # This tells pip that packages are under src/
-    install_requires=["pandas"],
+    url="https://github.com/yourusername/FleetDefense",
+    package_dir={"FleetDefenseSim": "FleetDefenseSim/src/sim"},
+    packages=["FleetDefenseSim"],
+    install_requires=["pandas", "pydantic"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

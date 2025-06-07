@@ -1,5 +1,5 @@
 from abc import ABC
-from src.sim.entities.kinematics import Position, Velocity
+from FleetDefenseSim.src.sim.entities.kinematics import Position, Velocity
 from enum import Enum
 from pydantic import BaseModel
 from typing import List, Tuple

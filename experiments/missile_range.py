@@ -1,4 +1,4 @@
-from FleetDefense.FleetDefenseSim.src.sim.entities.US.missiles.aim54C import AIM54
+from FleetDefenseSim.src.sim.entities.US.missiles.aim54C import AIM54
 
 
 if __name__ == "__main__":
