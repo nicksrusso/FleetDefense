@@ -8,4 +8,3 @@ class TF30(JetEngine):
 
     def __init__(self):
         super().__init__()
-        print("fuck this;")

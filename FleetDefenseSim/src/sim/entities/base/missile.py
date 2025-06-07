@@ -1,19 +1,25 @@
 from abc import ABC
 from src.sim.entities.kinematics import Position, Velocity
-import json
-from src.utils.get_data_path import get_data_dir_path
-import os
+from enum import Enum
+from pydantic import BaseModel
+from typing import List, Tuple
+
 
 class MissileType(Enum):
-    AIM54 = 'aim54C.json'
-    
-class Missile(ABC):
-    def __init__(self):
-        self.thrust_curve: list[tuple] = None
-        self.pos: Position = None
-        self.vel: Velocity = None
-        self.cross_sectional_area = None
+    AIM54 = "aim54C.json"
 
-    @classmethod
-    def init_from_json():
-        with open(os.path.join(get_data_dir_path, 'entities', 'missiles'))
+
+class MissileData(BaseModel):
+    thrust_curve: List[Tuple[float, float]] = None
+    pos: Position = None
+    vel: Velocity = None
+    cross_sectional_area: float = None
+    burn_time: float = None
+    launch_mass: float = None
+    propellant_mass: float = None
+
+
+class Missile(ABC):
+    def __init__(self, missile_data: MissileData):
+        for field in missile_data.__fields__:
+            setattr(self, field, getattr(missile_data, field))
