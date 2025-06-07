@@ -1,13 +1,24 @@
 from abc import ABC
 from src.sim.entities.base.radar import Radar
 from enum import Enum
+from src.utils.get_data_path import get_data_dir_path
+import json
+import os
+from collections import namedtuple
+from src.sim.entities.kinematics import Position, Velocity
+
+ShipData = namedtuple("ShipData", ["displacement", "max_speed"])
 
 
 class ShipClass(Enum):
-    Nimitz = "Nimitz"
-    Ticonderoga = "Ticonderoga"
-    Spruance = "Spruance"
-    OliverHazardPerry = "OliverHazardPerry"
+    Nimitz = ShipData(100000, 40)
+    TICONDEROGA = ShipData(9600, 32)
+    SPRUANCE = ShipData(8000, 32)
+    OLIVER_HAZARD_PERRY = ShipData(4100, 29)
+
+
+def load_ship_names():
+    return json.loads(os.path.join(get_data_dir_path(), "ship_names.json"))
 
 
 class Ship(ABC):
@@ -17,5 +28,7 @@ class Ship(ABC):
         self.name = ""
         self.displacement = ""
         self.max_speed = ""
-        self.current_speed = ""
+        self.pos: Position = None
+        self.vel: Velocity = None
+        self.current_speed_kn = None
         self.radars: list[Radar]
