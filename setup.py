@@ -9,7 +9,7 @@ setup(
     url="https://github.com/yourusername/FleetDefense",
     package_dir={"FleetDefenseSim": "FleetDefenseSim/src/sim"},
     packages=["FleetDefenseSim"],
-    install_requires=["pandas", "pydantic"],
+    install_requires=["pandas", "pydantic", "numpy", "scipy"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

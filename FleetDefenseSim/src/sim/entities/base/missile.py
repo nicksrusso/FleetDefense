@@ -14,6 +14,7 @@ class MissileData(BaseModel):
     pos: Position = None
     vel: Velocity = None
     cross_sectional_area: float = None
+    drag_coefficient: float = None
     burn_time: float = None
     launch_mass: float = None
     propellant_mass: float = None

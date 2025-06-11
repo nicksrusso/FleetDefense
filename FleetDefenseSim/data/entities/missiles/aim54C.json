@@ -112,6 +112,7 @@
 
     ],
     "cross_sectional_area": 0.12,
+    "drag_coefficient": 0.25, 
     "launch_mass": 475,
     "propellant_mass": 165
 }

@@ -7,6 +7,9 @@ from FleetDefenseSim.src.utils.get_data_path import get_data_dir_path
 class AIM54(Missile):
     missile_type = MissileType.AIM54
 
+    def __init__(self, missile_data: MissileData):
+        super().__init__(missile_data)
+
     @classmethod
     def from_json(cls):
         with open(os.path.join(get_data_dir_path(), "entities", "missiles", cls.missile_type.value), "r") as f:
