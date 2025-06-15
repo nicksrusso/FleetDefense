@@ -1,7 +1,0 @@
-setup.py
-FleetDefenseSim.egg-info/PKG-INFO
-FleetDefenseSim.egg-info/SOURCES.txt
-FleetDefenseSim.egg-info/dependency_links.txt
-FleetDefenseSim.egg-info/requires.txt
-FleetDefenseSim.egg-info/top_level.txt
-FleetDefenseSim/src/sim/__init__.py

@@ -1,11 +1,11 @@
 from abc import ABC
-from src.sim.entities.base.radar import Radar
+from FleetDefenseSim.src.sim.entities.models.radar import Radar
 from enum import Enum
-from src.utils.get_data_path import get_data_dir_path
+from FleetDefenseSim.src.utils.get_data_path import get_data_dir_path
 import json
 import os
 from collections import namedtuple
-from src.sim.entities.kinematics import Position, Velocity
+from FleetDefenseSim.src.sim.entities.kinematics import Position, Velocity
 
 ShipData = namedtuple("ShipData", ["displacement", "max_speed"])
 
@@ -18,7 +18,7 @@ class ShipClass(Enum):
 
 
 def load_ship_names():
-    return json.loads(os.path.join(get_data_dir_path(), "ship_names.json"))
+    return json.loads(os.path.join(get_data_dir_path(), "ships", "ship_names.json"))
 
 
 class Ship(ABC):
