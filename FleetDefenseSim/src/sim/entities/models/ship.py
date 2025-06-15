@@ -21,8 +21,8 @@ class ShipData(BaseModel):
     max_speed_kn: float = None
     pos: Position = None
     vel: Velocity = None
-    current_speed_kn = None
-    radars: list[Radar] = None
+    current_speed_kn: float = None
+    # radars: list[Radar] = None # omitting for now, radars not implemented
 
 
 def load_ship_names():
