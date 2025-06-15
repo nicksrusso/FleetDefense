@@ -3,11 +3,11 @@
 Inspired by the chapter [A Dance of Vampires](https://www.youtube.com/watch?v=zo8FhChnyq0) from Tom Clancy's Red Storm Rising, where a flight of Soviet Bombers destroys an American carrier fleet, I want to make a somewhat realistic simulation to replicate it.
 This repo is (will be eventually) a somewhat realistic, physics based simulation with AI agents taking the place of the decision makers. 
 
+<img src="./f14.png" alt="Alt text" style="display: block; margin: 0 auto;">
+
 Tentative Roadmap
 
 * [] Implement entities (jets, missiles, radars, etc)
 * [] Implement simulation framework
 * [] Implement simple, heuristic based AI agents
 * [] Explore machine learning approaches to replace simple agents
-
-![f14](./f14.png)
