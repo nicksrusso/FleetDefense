@@ -10,3 +10,4 @@ Tentative Roadmap
 * [] Implement simple, heuristic based AI agents
 * [] Explore machine learning approaches to replace simple agents
 
+![f14](./f14.png)
