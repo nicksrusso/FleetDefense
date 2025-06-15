@@ -1,5 +1,4 @@
 from abc import ABC
-from FleetDefenseSim.src.sim.entities.models.radar import Radar
 from enum import Enum
 from FleetDefenseSim.src.utils.get_data_path import get_data_dir_path
 import json
@@ -10,9 +9,9 @@ from pydantic import BaseModel
 
 class ShipClass(Enum):
     Nimitz = "Nimitz.json"
-    TICONDEROGA = "Ticonderoga.json"
-    SPRUANCE = "Spruance.json"
-    OLIVER_HAZARD_PERRY = "OliverHazardPerry.json"
+    Ticonderoga = "Ticonderoga.json"
+    Spruance = "Spruance.json"
+    Oliverhazardperry = "Oliverhazardperry.json"
 
 
 class ShipData(BaseModel):
@@ -26,7 +25,9 @@ class ShipData(BaseModel):
 
 
 def load_ship_names():
-    return json.loads(os.path.join(get_data_dir_path(), "ships", "ship_names.json"))
+    with open(os.path.join(get_data_dir_path(), "entities", "ships", "ship_names.json"), "r") as f:
+        ship_names = json.load(f)
+    return {entry["class"]: entry["ships"] for entry in ship_names}
 
 
 class Ship(ABC):
