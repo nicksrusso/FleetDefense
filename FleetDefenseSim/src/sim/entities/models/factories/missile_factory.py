@@ -9,13 +9,10 @@ class MissileFactory:
     missile_classes = {
         MissileType.AIM54: AIM54,
     }
-    MISSILE_FILES = {
-        MissileType.AIM54: "aim54C.json",
-    }
 
     @staticmethod
     def create_missile(missile_type: MissileType) -> Missile:
-        file_path = os.path.join(get_data_dir_path(), "entities", "missiles", MISSILE_FILES[missile_type])
+        file_path = os.path.join(get_data_dir_path(), "entities", "missiles", missile_type.value)
         with open(file_path, "r") as f:
             data = json.load(f)
         missile_data = MissileData(**data)

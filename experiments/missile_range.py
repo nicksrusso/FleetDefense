@@ -8,4 +8,6 @@ if __name__ == "__main__":
 
     alts = np.arange(0, 12001, 3000)
 
+    positions = np.array([Position(x, 0, 0) for x in x_coords])
+
     print()

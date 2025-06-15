@@ -4,17 +4,25 @@ from enum import Enum
 from FleetDefenseSim.src.utils.get_data_path import get_data_dir_path
 import json
 import os
-from collections import namedtuple
 from FleetDefenseSim.src.sim.entities.kinematics import Position, Velocity
-
-ShipData = namedtuple("ShipData", ["displacement", "max_speed"])
+from pydantic import BaseModel
 
 
 class ShipClass(Enum):
-    Nimitz = ShipData(100000, 40)
-    TICONDEROGA = ShipData(9600, 32)
-    SPRUANCE = ShipData(8000, 32)
-    OLIVER_HAZARD_PERRY = ShipData(4100, 29)
+    Nimitz = "Nimitz.json"
+    TICONDEROGA = "Ticonderoga.json"
+    SPRUANCE = "Spruance.json"
+    OLIVER_HAZARD_PERRY = "OliverHazardPerry.json"
+
+
+class ShipData(BaseModel):
+    name: str = None
+    displacement: float = None
+    max_speed_kn: float = None
+    pos: Position = None
+    vel: Velocity = None
+    current_speed_kn = None
+    radars: list[Radar] = None
 
 
 def load_ship_names():
@@ -22,13 +30,6 @@ def load_ship_names():
 
 
 class Ship(ABC):
-    def __init__(self):
-
-        self.ship_class: ShipClass = ""
-        self.name = ""
-        self.displacement = ""
-        self.max_speed = ""
-        self.pos: Position = None
-        self.vel: Velocity = None
-        self.current_speed_kn = None
-        self.radars: list[Radar]
+    def __init__(self, ship_data: ShipData):
+        for field in ship_data.__fields__:
+            setattr(self, field, getattr(ship_data, field))
