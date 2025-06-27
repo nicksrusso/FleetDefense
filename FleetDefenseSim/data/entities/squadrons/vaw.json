@@ -1,0 +1,15 @@
+[
+  {"Designation": "VAW-111", "Nickname": "Grayhawks", "Aircraft": "E-2C"},
+  {"Designation": "VAW-112", "Nickname": "Golden Hawks", "Aircraft": "E-2C"},
+  {"Designation": "VAW-113", "Nickname": "Black Eagles", "Aircraft": "E-2C"},
+  {"Designation": "VAW-114", "Nickname": "Hormel Hawgs", "Aircraft": "E-2C"},
+  {"Designation": "VAW-115", "Nickname": "Liberty Bells", "Aircraft": "E-2C"},
+  {"Designation": "VAW-116", "Nickname": "Sun Kings", "Aircraft": "E-2C"},
+  {"Designation": "VAW-117", "Nickname": "Wallbangers", "Aircraft": "E-2C"},
+  {"Designation": "VAW-120", "Nickname": "Grey Hawks", "Aircraft": "E-2C"},
+  {"Designation": "VAW-121", "Nickname": "Blue Tails", "Aircraft": "E-2C"},
+  {"Designation": "VAW-123", "Nickname": "Screwtops", "Aircraft": "E-2C"},
+  {"Designation": "VAW-124", "Nickname": "Bear Aces", "Aircraft": "E-2C"},
+  {"Designation": "VAW-125", "Nickname": "Tigertails", "Aircraft": "E-2C"},
+  {"Designation": "VAW-126", "Nickname": "Seahawks", "Aircraft": "E-2C"}
+]

@@ -1,0 +1,12 @@
+[
+  {"Designation": "VFA-15", "Nickname": "Valions", "Aircraft": "F/A-18"},
+  {"Designation": "VFA-25", "Nickname": "Fist of the Fleet", "Aircraft": "F/A-18"},
+  {"Designation": "VFA-87", "Nickname": "Golden Warriors", "Aircraft": "F/A-18"},
+  {"Designation": "VFA-113", "Nickname": "Stingers", "Aircraft": "F/A-18"},
+  {"Designation": "VFA-125", "Nickname": "Rough Raiders", "Aircraft": "F/A-18"},
+  {"Designation": "VFA-131", "Nickname": "Wildcats", "Aircraft": "F/A-18"},
+  {"Designation": "VFA-136", "Nickname": "Knighthawks", "Aircraft": "F/A-18"},
+  {"Designation": "VFA-137", "Nickname": "Kestrels", "Aircraft": "F/A-18"},
+  {"Designation": "VFA-151", "Nickname": "Vigilantes", "Aircraft": "F/A-18"},
+  {"Designation": "VFA-192", "Nickname": "Golden Dragons", "Aircraft": "F/A-18"}
+]

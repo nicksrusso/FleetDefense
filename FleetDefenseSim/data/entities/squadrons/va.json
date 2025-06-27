@@ -1,0 +1,22 @@
+[
+  {"Designation": "VA-34", "Nickname": "Blue Blasters", "Aircraft": "A-6"},
+  {"Designation": "VA-35", "Nickname": "Black Panthers", "Aircraft": "A-6"},
+  {"Designation": "VA-36", "Nickname": "Roadrunners", "Aircraft": "A-6"},
+  {"Designation": "VA-46", "Nickname": "Clansmen", "Aircraft": "A-7"},
+  {"Designation": "VA-55", "Nickname": "Warhorses", "Aircraft": "A-6"},
+  {"Designation": "VA-65", "Nickname": "Tigers", "Aircraft": "A-6"},
+  {"Designation": "VA-66", "Nickname": "Waldos", "Aircraft": "A-7"},
+  {"Designation": "VA-72", "Nickname": "Blue Hawks", "Aircraft": "A-7"},
+  {"Designation": "VA-75", "Nickname": "Sunday Punchers", "Aircraft": "A-6"},
+  {"Designation": "VA-81", "Nickname": "Sunliners", "Aircraft": "A-7"},
+  {"Designation": "VA-82", "Nickname": "Marauders", "Aircraft": "A-7"},
+  {"Designation": "VA-83", "Nickname": "Rampagers", "Aircraft": "A-7"},
+  {"Designation": "VA-85", "Nickname": "Black Falcons", "Aircraft": "A-6"},
+  {"Designation": "VA-86", "Nickname": "Sidewinders", "Aircraft": "A-7"},
+  {"Designation": "VA-87", "Nickname": "Golden Warriors", "Aircraft": "A-7"},
+  {"Designation": "VA-94", "Nickname": "Mighty Shrikes", "Aircraft": "A-7"},
+  {"Designation": "VA-97", "Nickname": "Warhawks", "Aircraft": "A-7"},
+  {"Designation": "VA-105", "Nickname": "Gunslingers", "Aircraft": "A-7"},
+  {"Designation": "VA-115", "Nickname": "Eagles", "Aircraft": "A-6"},
+  {"Designation": "VA-127", "Nickname": "Royal Blues", "Aircraft": "A-4"}
+]

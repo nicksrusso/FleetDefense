@@ -1,0 +1,12 @@
+[
+  {"Designation": "VS-21", "Nickname": "Redtails", "Aircraft": "S-3"},
+  {"Designation": "VS-22", "Nickname": "Checkmates", "Aircraft": "S-3"},
+  {"Designation": "VS-24", "Nickname": "Scouts", "Aircraft": "S-3"},
+  {"Designation": "VS-27", "Nickname": "Sea Wolves", "Aircraft": "S-3"},
+  {"Designation": "VS-28", "Nickname": "Gamblers", "Aircraft": "S-3"},
+  {"Designation": "VS-29", "Nickname": "Dragonfires", "Aircraft": "S-3"},
+  {"Designation": "VS-30", "Nickname": "Diamondcutters", "Aircraft": "S-3"},
+  {"Designation": "VS-31", "Nickname": "Topcats", "Aircraft": "S-3"},
+  {"Designation": "VS-32", "Nickname": "Maulers", "Aircraft": "S-3"},
+  {"Designation": "VS-41", "Nickname": "Shamrocks", "Aircraft": "S-3"}
+]
